@@ -124,6 +124,11 @@ namespace Simple.ImageResizer
             SaveImageToFile(_imageBytes, path);
         }
 
+        public byte[] SaveToBytes()
+        {
+            return _imageBytes;
+        }
+
         public void Dispose()
         {
             _imageBytes = null;
